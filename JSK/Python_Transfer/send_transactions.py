@@ -33,7 +33,7 @@ while(1):
         with open(sent_addresses_file, 'r') as f:
             sent_addresses = f.read().replace('\n', ' ')
     else:
-        sent_addresses = []
+        sent_addresses = ''
     
     for  index,row in ds.iterrows():
         addr = row["Address"]
